@@ -39,8 +39,12 @@ body {
 
 .list {
   list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
+}
+
+.card {
+  display: block;
 }
 
 .hero {
@@ -56,6 +60,8 @@ body {
   line-height: 1.5;
   vertical-align: top;
   letter-spacing: 0.06em;
+
+  margin: 0;
 }
 
 .section-title {
@@ -67,11 +73,20 @@ body {
   text-align: center;
   vertical-align: top;
   letter-spacing: 0.03em;
+
+  margin: 0;
 }
 
 .title {
   color: var(--title-text-color);
+
+  margin: 0;
 }
+
+.text {
+  margin: 0;
+}
+
 .comand {
   background-color: var(--secondary-bgcolor);
 }
@@ -84,7 +99,7 @@ body {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  /* outline: 2px solid tomato; */
+  outline: 2px solid tomato;
 }
 
 /* скрытие заголовка */
@@ -201,6 +216,8 @@ body {
   text-align: center;
   vertical-align: top;
   letter-spacing: 0.03em;
+
+  margin: 0;
 }
 
 .filter {
@@ -241,6 +258,8 @@ body {
   text-align: left;
   vertical-align: top;
   letter-spacing: 0.03em;
+
+  margin: 0;
 }
 
 /*футер*/
