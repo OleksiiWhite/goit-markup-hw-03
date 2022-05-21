@@ -8,6 +8,7 @@
 /*цвет фона секции наша команда и фона радиокнопок #F5F4FA */
 /* цвет ховера кнопки заказать услугу #188CE8 */
 /* цвет бордера topline #ECECEC */
+/* цвет бордера картки порфолио #EEEEEE */
 
 /*переменные*/
 
@@ -20,6 +21,7 @@
   --secondary-bgcolor: #f5f4fa;
   --secondary-accent-color: #188ce8;
   --topline-color: #ececec;
+  --boder-portfolio-color: #eeeeee;
 }
 
 /* общие */
@@ -47,6 +49,14 @@ body {
 
 .card {
   display: block;
+}
+
+.section {
+  margin-bottom: 94px;
+}
+
+.section.portfolio {
+  margin-top: 94px;
 }
 
 .hero {
@@ -80,13 +90,18 @@ body {
   vertical-align: top;
   letter-spacing: 0.03em;
 
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 50px;
 }
 
 .title {
   color: var(--title-text-color);
 
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.portfolio-workes .title {
+  margin-bottom: 4px;
 }
 
 .text {
@@ -186,7 +201,7 @@ body {
   color: var(--accent-color);
 }
 
-/* портфолио */
+/* кнопка */
 
 .button {
   color: var(--primary-white-color);
@@ -206,6 +221,7 @@ body {
   padding: 10px 32px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: 0;
 }
 
 .button:hover,
@@ -233,6 +249,33 @@ body {
   letter-spacing: 0.03em;
 
   margin: 0;
+}
+
+.comand-item {
+  width: 270px;
+  height: 368px;
+
+  background: var(--primary-white-color);
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  padding-bottom: 30px;
+}
+.comand .card {
+  margin-bottom: 30px;
+}
+
+/* портфолио */
+
+.title-work {
+  padding: 20px 24px;
+  background-color: var(--primary-white-color);
+  border: 1px solid var(--boder-portfolio-color);
+}
+.portfolio-item {
+  width: 370px;
+  height: 404px;
 }
 
 .filter {
