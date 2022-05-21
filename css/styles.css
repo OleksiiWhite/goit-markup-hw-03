@@ -7,6 +7,7 @@
 /* цвет фона шапки и футера #2F303A */
 /*цвет фона секции наша команда и фона радиокнопок #F5F4FA */
 /* цвет ховера кнопки заказать услугу #188CE8 */
+/* цвет бордера topline #ECECEC */
 
 /*переменные*/
 
@@ -18,6 +19,7 @@
   --head-footer-bgcolor: #2f303a;
   --secondary-bgcolor: #f5f4fa;
   --secondary-accent-color: #188ce8;
+  --topline-color: #ececec;
 }
 
 /* общие */
@@ -48,20 +50,24 @@ body {
 }
 
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+
   background-color: var(--head-footer-bgcolor);
 
   text-align: center;
 }
+
 .hero-title {
+  width: 696px;
   color: var(--primary-white-color);
 
   font-weight: 900;
   font-size: 44px;
   line-height: 1.5;
-  vertical-align: top;
   letter-spacing: 0.06em;
 
-  margin: 0;
+  margin: 0 auto 30px;
 }
 
 .section-title {
@@ -140,6 +146,9 @@ body {
 }
 
 /* Хедер */
+.container.topline {
+  border-bottom: 1px solid var(--topline-color);
+}
 
 .site-nav .link {
   color: var(--title-text-color);
@@ -191,6 +200,12 @@ body {
   text-align: center;
   vertical-align: center;
   letter-spacing: 0.06em;
+
+  display: inline-block;
+  min-width: 200px;
+  padding: 10px 32px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 .button:hover,
