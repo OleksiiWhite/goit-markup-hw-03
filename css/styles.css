@@ -89,7 +89,6 @@ body {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  vertical-align: top;
   letter-spacing: 0.03em;
 
   margin-top: 0;
@@ -107,7 +106,8 @@ body {
 }
 
 .text {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .comand {
@@ -145,15 +145,17 @@ body {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.19;
+  line-height: 1.18;
   text-align: left;
-  vertical-align: top;
   letter-spacing: 0.03em;
 
   color: var(--title-text-color);
 }
 
 .logo.white {
+  display: block;
+  margin-bottom: 20px;
+
   color: var(--primary-white-color);
 }
 
@@ -266,14 +268,53 @@ body {
   background-color: var(--secondary-accent-color);
 }
 
+/* наши особенности */
+
+.list.skill > .title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  text-align: left;
+  letter-spacing: 0.03em;
+}
+
+.list.skill {
+  display: flex;
+}
+
+.list.skill .item:not(:first-child) {
+  margin-right: 30px;
+}
+
+.list.skill .item {
+  width: 270px;
+}
+
+/*чем мы занимаемся */
+
+.list.activity {
+  display: flex;
+}
+
+.list.activity .item:not(:last-child) {
+  margin-right: 30px;
+}
+
 /* наша команда */
+
+.people {
+  display: flex;
+}
+
+.people .comand-item:not(:last-child) {
+  margin-right: 30px;
+}
 
 .people .title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.17;
   text-align: center;
-  vertical-align: top;
   letter-spacing: 0.03em;
 }
 .profession {
@@ -282,7 +323,6 @@ body {
   font-size: 16px;
   line-height: 1.17;
   text-align: center;
-  vertical-align: top;
   letter-spacing: 0.03em;
 
   margin: 0;
@@ -323,7 +363,6 @@ body {
   font-size: 16px;
   line-height: 1.63;
   text-align: center;
-  vertical-align: top;
   letter-spacing: 0.03;
 
   color: var(--title-text-color);
@@ -341,7 +380,6 @@ body {
   font-size: 18px;
   line-height: 2;
   text-align: left;
-  vertical-align: top;
   letter-spacing: 0.06em;
 }
 
@@ -351,7 +389,6 @@ body {
   font-size: 16px;
   line-height: 1.9;
   text-align: left;
-  vertical-align: top;
   letter-spacing: 0.03em;
 
   margin: 0;
@@ -361,15 +398,12 @@ body {
 
 .footer {
   background-color: var(--head-footer-bgcolor);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.list.skill > .title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.17;
-  text-align: left;
-  vertical-align: top;
-  letter-spacing: 0.03em;
+.adress .item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .adress .link.post {
@@ -378,7 +412,6 @@ body {
   font-size: 14px;
   line-height: 1.7;
   text-align: left;
-  vertical-align: top;
   letter-spacing: 0.03em;
 }
 
