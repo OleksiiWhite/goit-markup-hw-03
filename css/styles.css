@@ -53,18 +53,22 @@ body {
   height: auto;
 }
 
-.section {
-  margin-bottom: 94px;
+.section.impotent {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+.section.works {
+  padding-bottom: 94px;
 }
 
 .section.comand {
-  margin-bottom: 0;
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
 .section.portfolio {
-  margin-top: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .hero {
@@ -128,21 +132,6 @@ body {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-}
-
-/* скрытие заголовка */
-
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
 }
 
 /* логотип */
@@ -288,10 +277,9 @@ body {
   display: flex;
 }
 
-.list.skill .item:not(:first-child) {
+.list.skill .item:not(:last-child) {
   margin-right: 30px;
 }
-
 .list.skill .item {
   width: 270px;
 }
@@ -310,6 +298,11 @@ body {
 
 .people {
   display: flex;
+}
+
+.people-title {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .people .comand-item:not(:last-child) {
@@ -336,25 +329,22 @@ body {
 
 .comand-item {
   width: 270px;
-  height: 368px;
 
   background: var(--primary-white-color);
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  padding-bottom: 30px;
-}
-
-.comand .card {
-  margin-bottom: 30px;
 }
 
 /* портфолио */
 
 .title-work {
   padding: 20px 24px;
-  border: 1px solid var(--boder-portfolio-color);
+
+  border-bottom: 1px solid var(--boder-portfolio-color);
+  border-left: 1px solid var(--boder-portfolio-color);
+  border-right: 1px solid var(--boder-portfolio-color);
 
   background-color: var(--primary-white-color);
 }
